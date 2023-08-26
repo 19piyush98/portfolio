@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Priyanshu Singh</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Exploring the world one project at a time.</p>
+            <a href="#portfolio" class="btn">View Portfolio</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="circular-frame">
+            <img src="profile-image.jpg" alt="Profile Image">
+        </div>
+        <div class="about-content">
+            <h2>Priyanshu Singh</h2>
+            <p>I am a passionate web developer with a keen interest in creating visually appealing and functional websites. My journey into web development started several years ago, and I've been exploring the ever-evolving landscape of technologies and design principles.</p>
+            <p>With a background in computer science and a knack for creative problem-solving, I strive to bring innovative and user-friendly solutions to the digital realm. I'm experienced in both front-end and back-end development, and I enjoy collaborating with others to turn ideas into reality.</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="portfolio-item">
+            <p>A responsive website showcasing my CSS skills. This project was a part of my journey in learning modern web development techniques. I implemented various layout styles and used CSS animations to enhance user experience.
+            I thoroughly enjoyed working on this project and exploring different CSS techniques to create visually appealing designs. The challenges I encountered during the development process helped me grow as a web developer.</p>
+            <p><strong>View Project:</strong> <a href="your-portfolio-link" target="_blank">My Portfolio</a></p>
+            <img src="project1.png" alt="Project 1">
+        </div>
+        <div class="portfolio-item">
+            <img src="project2.jpg" alt="Project 2">
+            <p>An interactive JavaScript application for task management.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

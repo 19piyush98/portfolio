@@ -1,0 +1,205 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+/**
+Home section style starts here
+*/
+#home {
+    background-image: url('home_background.jpg');
+    background-size: cover;
+    color: rgb(255, 250, 250);
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero .btn {
+    padding-top: 50px;
+    padding-bottom: -20px;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: pulsate 2s infinite, fadeInUp 1.5s ease-in-out 0.5s forwards;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-in-out 1s forwards;
+}
+
+.hero a {
+    display: inline-block;
+    font-size: 1.1rem;
+    color: #3498db; 
+    text-decoration: none;
+    margin-top: 20px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.hero a:hover {
+    color: #2980b9; 
+    font-size: 1.2rem;
+}
+
+/**
+About section style starts here
+*/
+
+#about {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Style for the circular image frame */
+.circular-frame {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.circular-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+/**
+Portfolio section style starts here
+*/
+#portfolio {
+    padding: 100px 0;
+    background-color: #f4f4f4;
+}
+
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+}
+
+.portfolio-item img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 30%;
+    border: 2px solid #f39c12;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item p {
+    max-width: 60%;
+    font-size: 1.1rem;
+    margin-left: 20px;
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.portfolio-item a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+/**
+ Contact section style starts here
+*/
+#contact {
+    background-color: #333;
+    color: white;
+    padding: 100px 0;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
