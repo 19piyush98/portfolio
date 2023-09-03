@@ -22,6 +22,21 @@ nav a {
     text-decoration: none;
     color: white;
 }
+
+.fade-in {
+    background: white;
+    /* height: 300px;
+    width: 300px; */
+    /* margin-bottom: 100px; */
+    opacity:0;
+    transform: translateY(40%);
+    transition: all 2s ease-out;
+  }
+  
+  .active {
+    opacity: 4;
+    transform: translateY(0);
+  }
 /**
 Home section style starts here
 */
@@ -90,14 +105,24 @@ About section style starts here
     width: 250px;
     height: 250px;
     border-radius: 50%;
+    position: relative;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: radial-gradient(circle at 100%, hsl(240, 1%, 25%) 3%,  hsl(0, 0%, 19%) 97%);
+    box-shadow: 50px 50px 50px rgba(71, 72, 72, 0.2);
 }
 
 .circular-frame img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.hidden {
+    opacity: 0;
+    transform: rotate(180deg);
 }
 
 .about-content p {
@@ -203,3 +228,147 @@ Portfolio section style starts here
         transform: scale(1);
     }
 }
+
+
+
+/**
+ * education and experience 
+ */
+
+
+.timeline .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.timeline-list {
+  margin-left: 45px;
+}
+
+.timeline-item { position: relative; }
+
+.timeline-item:not(:last-child) { margin-bottom: 20px; }
+
+.timeline-item-title {
+  line-height: 1.3;
+  margin-bottom: 7px;
+}
+
+.timeline-list span {
+  color: hsl(45, 54%, 58%);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  width: 1px;
+  height: calc(100% + 50px);
+  background:  hsl(0, 0%, 22%);
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%)
+  );
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px hsl(0, 0%, 22%);
+}
+
+.timeline-text {
+  color: hsl(0, 1%, 27%);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+
+/**
+ * skills 
+ */
+
+
+.skills-title { margin-bottom: 20px; }
+
+.skills-list { padding: 20px; }
+
+
+.skills-item:not(:last-child) { margin-bottom: 15px; }
+
+.skill .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.skill .title-wrapper data {
+  color:  hsl(0, 0%, 84%);
+  font-weight: 300;
+}
+
+.skill-progress-bg {
+  background: hsl(0, 0%, 22%);
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+}
+
+.skill-progress-fill {
+  background: linear-gradient(to right,  hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+  height: 100%;
+  border-radius: inherit;
+}
+
+.double-content {
+    display: flex;
+    font: 1em sans-serif;
+    justify-content: space-between;
+}
+
+.timeline {
+    flex-basis: calc(50% - 20px); 
+    margin-right: 20px; 
+    font-size: 1rem;
+  }
+  
+  .skill {
+    flex-basis: calc(50% - 20px); 
+    margin-left: 20px;
+    font-size: 1rem;
+  }
+
+  .icon-box {
+    position: relative;
+    background: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: hsl(45, 100%, 72%);
+    box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+    z-index: 1;
+  }
+  
+  .icon-box::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: hsl(240, 2%, 13%);
+    border-radius: inherit;
+    z-index: -1;
+  }
+  
+  .icon-box ion-icon { --ionicon-stroke-width: 35px; display: block }
