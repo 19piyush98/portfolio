@@ -9,6 +9,69 @@ header {
     padding: 1rem;
 }
 
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px 20px; */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the right menu (social media icons) */
+.social-media {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px; /* Adjust the icon size as needed */
+    margin-left: 10px; /* Adjust the spacing between social media icons */
+}
+
+/* Example of Font Awesome icons, assuming you're using Font Awesome */
+/* You can change these class names to match the icons you want to use */
+.fa.fa-facebook::before {
+    content: "\f09a";
+}
+
+.fa.fa-twitter::before {
+    content: "\f099";
+}
+
+.fa.fa-instagram::before {
+    content: "\f16d";
+}
+
+.fa.fa-linkedin::before {
+    content: "\f0e1";
+}
+
+/* Add a hover effect for navigation items */
+nav ul li:hover a {
+    background-color: #fff; /* Change the background color */
+    color: #333; /* Change the text color */
+    border-radius: 5px; /* Add a border radius for a rounded appearance */
+    transition: all 0.3s ease; /* Add a smooth transition */
+}
+
+/* Add a hover effect for social media icons */
+.social-media a:hover {
+    background-color: #fff; /* Change the background color */
+    color: #333; /* Change the text color */
+    border-radius: 50%; /* Add a border radius for a rounded appearance (for circle icons) */
+    transition: all 0.3s ease; /* Add a smooth transition */
+}
+
+
 nav ul {
     list-style: none;
     display: flex;
@@ -41,9 +104,9 @@ nav a {
 Home section style starts here
 */
 #home {
-    background-image: url('home_background.jpg');
+    background-image: url('home-background.jpeg');
     background-size: cover;
-    color: rgb(255, 250, 250);
+    color: rgb(203, 201, 201);
     text-align: center;
     padding: 100px 0;
 }
