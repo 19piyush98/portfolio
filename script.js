@@ -58,7 +58,7 @@ function typeHeading(text, elementId, delay) {
 // Call the function when the page is loaded
 window.onload = function() {
     // Delay between each letter (adjust as needed)
-    const typingDelay = 250; // 250 milliseconds
+    const typingDelay = 150; // 250 milliseconds
     const headingText = "I am Priyanshu Singh"; // Text to be typed
     const headingElementId = "typing-heading"; // ID of the heading element
     const welcomeText = "Welcome!";
